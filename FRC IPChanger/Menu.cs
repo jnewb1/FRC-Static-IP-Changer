@@ -265,7 +265,7 @@ namespace FRC_IPChanger
             var config = new Config();
             config.Show();
         }
-        private void config_close(object sender, EventArgs e)
+        private void reloadGui()
         {
             team1Button.Text = Properties.Settings.Default["team1name"].ToString();
             team2Button.Text = Properties.Settings.Default["team2name"].ToString();
@@ -300,6 +300,12 @@ namespace FRC_IPChanger
         private void IPChanger_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void reloadGUIButton_Click(object sender, EventArgs e)
+        {
+            AppendStatus("Reloading GUI");
+            reloadGui();
         }
     }
 }

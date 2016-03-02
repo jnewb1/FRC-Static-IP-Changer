@@ -38,6 +38,7 @@
             this.refreshnalist = new System.Windows.Forms.Button();
             this.statusbox = new System.Windows.Forms.TextBox();
             this.helpbutton = new System.Windows.Forms.Button();
+            this.reloadGUIButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // adapterComboBox
@@ -149,12 +150,23 @@
             this.helpbutton.UseVisualStyleBackColor = true;
             this.helpbutton.Click += new System.EventHandler(this.helpbutton_Click);
             // 
+            // reloadGUIButton
+            // 
+            this.reloadGUIButton.Location = new System.Drawing.Point(787, 65);
+            this.reloadGUIButton.Name = "reloadGUIButton";
+            this.reloadGUIButton.Size = new System.Drawing.Size(75, 23);
+            this.reloadGUIButton.TabIndex = 11;
+            this.reloadGUIButton.Text = "Reload GUI";
+            this.reloadGUIButton.UseVisualStyleBackColor = true;
+            this.reloadGUIButton.Click += new System.EventHandler(this.reloadGUIButton_Click);
+            // 
             // IPChanger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(875, 284);
+            this.Controls.Add(this.reloadGUIButton);
             this.Controls.Add(this.helpbutton);
             this.Controls.Add(this.statusbox);
             this.Controls.Add(this.refreshnalist);
@@ -185,6 +197,7 @@
         private System.Windows.Forms.Button refreshnalist;
         private System.Windows.Forms.TextBox statusbox;
         private System.Windows.Forms.Button helpbutton;
+        private System.Windows.Forms.Button reloadGUIButton;
     }
 }
 
