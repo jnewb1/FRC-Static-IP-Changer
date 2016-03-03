@@ -30,7 +30,8 @@ namespace FRC_IPChanger
                         var mo = (ManagementObject)o;
                         // if (!(bool)mo["IPEnabled"]) continue;
                         //AppendStatus("Setting DHCP on " + mo.ToString());
-                        setIP("1.1.1.1", "1.1.1.1", mo["Caption"].ToString());
+                        setIP("1.1.1.2", "1.1.1.1", mo["Caption"].ToString());
+                        setGateway("1.1.1.3", mo["Caption"].ToString());
                         mo.InvokeMethod("EnableDHCP", null, null);
                         
                     }
